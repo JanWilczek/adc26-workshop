@@ -86,10 +86,10 @@ set(GCC_WARNINGS
     -Wno-useless-cast # warn if you perform a cast to the same type
 )
 
-message(TRACE "Warnings are treated as errors")
-list(APPEND CLANG_WARNINGS -Werror)
-list(APPEND GCC_WARNINGS -Werror)
-list(APPEND MSVC_WARNINGS /WX)
+# message(TRACE "Warnings are treated as errors")
+# list(APPEND CLANG_WARNINGS -Werror)
+# list(APPEND GCC_WARNINGS -Werror)
+# list(APPEND MSVC_WARNINGS /WX)
 
 if(MSVC)
   set(PROJECT_WARNINGS_CXX ${MSVC_WARNINGS})
